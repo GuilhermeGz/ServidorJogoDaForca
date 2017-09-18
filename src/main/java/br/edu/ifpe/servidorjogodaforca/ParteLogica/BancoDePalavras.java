@@ -28,4 +28,8 @@ public class BancoDePalavras {
         Palavras = palavras;
     }
 
+    public void adicionarPalavra(String palavra) {
+        Palavras.add(palavra);
+    }
+
 }
