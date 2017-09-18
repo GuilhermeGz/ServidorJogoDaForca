@@ -32,4 +32,8 @@ public class BancoDePalavras {
         Palavras.add(palavra);
     }
 
+    public String removerPalavra(String palavra) {
+        Palavras.remove(palavra);
+    }
+
 }
