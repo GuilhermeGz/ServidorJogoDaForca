@@ -20,4 +20,12 @@ public class BancoDePalavras {
         Palavras.add("BOLACHA");
     }
 
+    public ArrayList<String> getPalavras() {
+        return Palavras;
+    }
+
+    public void setPalavras(ArrayList<String> palavras) {
+        Palavras = palavras;
+    }
+
 }
