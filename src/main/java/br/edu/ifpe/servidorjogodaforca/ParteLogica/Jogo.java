@@ -22,5 +22,20 @@ public class Jogo {
         }
         return campo;
     }
+    
+    public boolean verificarAcerto(char letra) {
+        boolean cont = false;
+        for (int i = 0; i < letras.length; i++) {
+            if (letra == letras[i]) {
+                acertos++;
+                marcasao[i] = 1;
+                cont = true;
+            }
+        }
+        if (cont != true) {
+            erros++;
+        }
+        return acertos < letras.length && erros < 7;
+    }
 
 }
