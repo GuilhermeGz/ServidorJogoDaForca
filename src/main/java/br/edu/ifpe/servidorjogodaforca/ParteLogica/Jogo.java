@@ -59,7 +59,7 @@ public class Jogo {
         return verificarAcerto(pl);
     }
 
-     public String adicionarPalavra(String palavra) {
+    public String adicionarPalavra(String palavra) {
         palavra = palavra.toUpperCase();
         if (bd.Palavras.contains(palavra) == true) {
             return "\nPalavra já se encontra na lista";
@@ -68,5 +68,14 @@ public class Jogo {
             return "\nPalavra adicionada";
         }
     }
-     
+
+    public String removerPalavra(String palavra) {
+        palavra = palavra.toUpperCase();
+        if (bd.Palavras.remove(palavra) == true) {
+            return "\nPalavra removida";
+        } else {
+            return "\nPalavra não existe na lista";
+        }
+    }
+
 }
