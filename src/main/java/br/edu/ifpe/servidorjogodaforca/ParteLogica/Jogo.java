@@ -22,7 +22,7 @@ public class Jogo {
         }
         return campo;
     }
-    
+
     public boolean verificarAcerto(char letra) {
         boolean cont = false;
         for (int i = 0; i < letras.length; i++) {
@@ -37,10 +37,18 @@ public class Jogo {
         }
         return acertos < letras.length && erros < 7;
     }
-    
-        public String mostrarMenu(){
+
+    public String mostrarMenu() {
         return "1 - Jogar\n2 - Adicionar palavra\n3 - Remover palavra"
-                    +"\n4 - Mostrar lista de palvras\n5 - Sair do jogo";
+                + "\n4 - Mostrar lista de palvras\n5 - Sair do jogo";
+    }
+
+    public String verificarRsultadoDaPartida(int acertos, char[] lista) {
+        if (acertos == lista.length) {
+            return "\nVitoria\n";
+        } else {
+            return "\nDerrota\n";
+        }
     }
 
 }
