@@ -86,4 +86,8 @@ public class Jogo {
         return lista;
     }
 
+    public boolean escolherLetra(String caracter, ArrayList<Character> letrasRepetidas) {
+        char letra = caracter.toUpperCase().charAt(0);
+        return verificarRepeticaoDeLetra(letra, letrasRepetidas);
+    }
 }
