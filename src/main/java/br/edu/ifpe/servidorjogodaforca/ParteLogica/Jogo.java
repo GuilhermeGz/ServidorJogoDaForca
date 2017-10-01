@@ -51,4 +51,12 @@ public class Jogo {
         }
     }
 
+    public boolean verificarRepeticaoDeLetra(char pl, ArrayList<Character> letrasRepetidas) {
+        if (letrasRepetidas.contains(pl)) {
+            return true;
+        }
+        letrasRepetidas.add(pl);
+        return verificarAcerto(pl);
+    }
+
 }
