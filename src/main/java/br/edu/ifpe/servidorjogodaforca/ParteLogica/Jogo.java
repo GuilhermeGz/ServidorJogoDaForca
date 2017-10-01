@@ -59,4 +59,14 @@ public class Jogo {
         return verificarAcerto(pl);
     }
 
+     public String adicionarPalavra(String palavra) {
+        palavra = palavra.toUpperCase();
+        if (bd.Palavras.contains(palavra) == true) {
+            return "\nPalavra já se encontra na lista";
+        } else {
+            bd.adicionarPalavra(palavra);
+            return "\nPalavra adicionada";
+        }
+    }
+     
 }
