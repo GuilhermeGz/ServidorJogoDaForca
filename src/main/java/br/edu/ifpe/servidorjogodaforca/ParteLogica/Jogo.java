@@ -1,15 +1,23 @@
 package br.edu.ifpe.servidorjogodaforca.ParteLogica;
 
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Jogo {
 
     int erros;
     int acertos;
+    Random gerador = new Random();
+    int opcao;
     BancoDePalavras bd;
     char[] letras;
     int[] marcasao;
     ArrayList<Character> letrasRepetidas;
+
+    private void setOpcao(int op) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public String criarCampo(char[] lista, int[] marcador) {
         String campo = new String();
@@ -90,4 +98,15 @@ public class Jogo {
         char letra = caracter.toUpperCase().charAt(0);
         return verificarRepeticaoDeLetra(letra, letrasRepetidas);
     }
+
+    public String inicializarAtributos(int op) {
+        int posicao = gerador.nextInt(bd.getPalavras().size());
+        String palavra = bd.getPalavras().get(posicao);
+        letras = palavra.toCharArray();
+        marcasao = new int[letras.length];
+        letrasRepetidas = new ArrayList<Character>();
+        setOpcao(op);
+        return "Inicializado";
+    }
+
 }
