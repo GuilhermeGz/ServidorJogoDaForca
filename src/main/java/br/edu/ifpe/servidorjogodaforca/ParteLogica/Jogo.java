@@ -1,14 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifpe.servidorjogodaforca.ParteLogica;
 
-/**
- *
- * @author gon
- */
+import java.util.ArrayList;
+
 public class Jogo {
+
+    BancoDePalavras bd;
+    char[] letras;
+    int[] marcasao;
+    ArrayList<Character> letrasRepetidas;
     
+    public String criarCampo(char[] lista, int[] marcador) {
+        String campo = new String();
+        for (int i = 0; i < lista.length; i++) {
+            if (marcador[i] == 1) {
+                campo += lista[i] + " ";
+            } else {
+                campo += "_ ";
+            }
+        }
+        return campo;
+    }
+
 }
