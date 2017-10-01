@@ -36,12 +36,4 @@ public class BancoDePalavras {
         Palavras.remove(palavra);
     }
 
-    public String mostrarLista() {
-        String lista = new String();
-        for (int i = 0; i < Palavras.size(); i++) {
-            lista += " " + Palavras.get(i);
-        }
-        return lista;
-    }
-
 }

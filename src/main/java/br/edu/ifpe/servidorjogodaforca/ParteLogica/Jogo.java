@@ -78,4 +78,12 @@ public class Jogo {
         }
     }
 
+    public String mostrarLista() {
+        String lista = new String();
+        for (int i = 0; i < bd.getPalavras().size(); i++) {
+            lista += " " + bd.getPalavras().get(i);
+        }
+        return lista;
+    }
+
 }
