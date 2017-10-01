@@ -37,5 +37,10 @@ public class Jogo {
         }
         return acertos < letras.length && erros < 7;
     }
+    
+        public String mostrarMenu(){
+        return "1 - Jogar\n2 - Adicionar palavra\n3 - Remover palavra"
+                    +"\n4 - Mostrar lista de palvras\n5 - Sair do jogo";
+    }
 
 }
