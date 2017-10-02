@@ -11,7 +11,7 @@ public class BancoDePalavras {
         Palavras.add("QUEIJO");
         Palavras.add("BANANA");
         Palavras.add("CAJU");
-        Palavras.add("GOAIBA");
+        Palavras.add("GOIABA");
         Palavras.add("TOMATE");
         Palavras.add("ARROZ");
         Palavras.add("LARANJA");
