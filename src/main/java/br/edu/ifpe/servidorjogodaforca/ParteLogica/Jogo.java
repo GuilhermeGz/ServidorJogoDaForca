@@ -159,14 +159,14 @@ public class Jogo {
         return verificarRepeticaoDeLetra(letra, letrasRepetidas);
     }
 
-    public String inicializarAtributos(int op) {
+    public void inicializarAtributos(int op, Jogo j) {
+        bd = new BancoDePalavras();
         int posicao = gerador.nextInt(bd.getPalavras().size());
         String palavra = bd.getPalavras().get(posicao);
         letras = palavra.toCharArray();
         marcasao = new int[letras.length];
         letrasRepetidas = new ArrayList<Character>();
         setOpcao(op);
-        return "Inicializado";
     }
 
 }
