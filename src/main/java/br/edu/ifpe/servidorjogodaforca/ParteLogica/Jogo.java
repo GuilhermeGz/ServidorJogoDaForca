@@ -15,8 +15,68 @@ public class Jogo {
     int[] marcasao;
     ArrayList<Character> letrasRepetidas;
 
-    private void setOpcao(int op) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public char[] getLetras() {
+        return letras;
+    }
+
+    public Random getGerador() {
+        return gerador;
+    }
+
+    public void setGerador(Random gerador) {
+        this.gerador = gerador;
+    }
+
+    public BancoDePalavras getBd() {
+        return bd;
+    }
+
+    public void setBd(BancoDePalavras bd) {
+        this.bd = bd;
+    }
+
+    public int[] getMarcasao() {
+        return marcasao;
+    }
+
+    public ArrayList<Character> getLetrasRepetidas() {
+        return letrasRepetidas;
+    }
+
+    public int getErros() {
+        return erros;
+    }
+
+    public void setErros(int erros) {
+        this.erros = erros;
+    }
+
+    public int getAcertos() {
+        return acertos;
+    }
+
+    public void setAcertos(int acertos) {
+        this.acertos = acertos;
+    }
+
+    public int getOpcao() {
+        return opcao;
+    }
+
+    public void setOpcao(int opcao) {
+        this.opcao = opcao;
+    }
+
+    public void setLetras(char[] letras) {
+        this.letras = letras;
+    }
+
+    public void setMarcasao(int[] marcasao) {
+        this.marcasao = marcasao;
+    }
+
+    public void setLetrasRepetidas(ArrayList<Character> letrasRepetidas) {
+        this.letrasRepetidas = letrasRepetidas;
     }
 
     public String criarCampo(char[] lista, int[] marcador) {
