@@ -107,7 +107,7 @@ public class Jogo {
 
     public String mostrarMenu() {
         return "1 - Jogar\n2 - Adicionar palavra\n3 - Remover palavra"
-                + "\n4 - Mostrar lista de palvras\n5 - Sair do jogo";
+                + "\n4 - Mostrar lista de palvras\n5 - Sair do modo online\n6 - Sair do jogo";
     }
 
     public String verificarRsultadoDaPartida(int acertos, char[] lista) {
